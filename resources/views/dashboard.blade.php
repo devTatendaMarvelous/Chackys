@@ -51,7 +51,7 @@
                         	<div class="project-block">
                             	<div class="inner-box">
                                 	<div class="image">
-                                    	<img src="/storage/postFiles/{{$post->main}}" style="max-height: 600px; max-width:600px;" />
+                                    	<img src="/postFiles/{{$post->main}}" style="max-height: 600px; max-width:600px;" />
                                         <div class="overlay-box">
                                         	<div class="content">
                                             	<h3>{{$post->title}}</h3>

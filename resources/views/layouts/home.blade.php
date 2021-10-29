@@ -7,16 +7,16 @@
 <meta charset="utf-8">
 <title>{{config('app.name')}}</title>
 <!-- Stylesheets -->
-<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
-<link href="{{asset('plugins/revolution/css/settings.css')}}" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
-<link href="{{asset('plugins/revolution/css/layers.css')}}" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
-<link href="{{asset('plugins/revolution/css/navigation.css')}}" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
-<link href="{{asset('css/style.css')}}" rel="stylesheet">
-<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
+<link href="/plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+<link href="/plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/responsive.css" rel="stylesheet">
 <!--Color Switcher Mockup-->
-<link href="{{asset('css/color-switcher-design.css')}}" rel="stylesheet">
+<link href="/css/color-switcher-design.css" rel="stylesheet">
 <!--Color Themes-->
-<link id="theme-color-file" href="{{asset('css/color-themes/default-theme.css')}}" rel="stylesheet">
+<link id="theme-color-file" href="/css/color-themes/default-theme.css" rel="stylesheet">
 
 
 <link rel="shortcut icon" href="images/fa vicon.png" type="image/x-icon">
@@ -209,31 +209,31 @@
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
 
-<script src="{{asset('js/jquery.js')}}"></script> 
+<script src="/js/jquery.js"></script> 
 <!--Revolution Slider-->
-<script src="{{asset('plugins/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
-<script src="{{asset('plugins/revolution/js/jquery.themepunch.tools.min.js')}}"></script>
-<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
-<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
-<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
-<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
-<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
-<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
-<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
-<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
-<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
-<script src="{{asset('js/main-slider-script.js')}}"></script>
+<script src="/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script src="/js/main-slider-script.js"></script>
 
-<script src="{{asset('js/popper.min.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
-<script src="{{asset('js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
-<script src="{{asset('js/jquery.fancybox.js')}}"></script>
-<script src="{{asset('js/appear.js')}}"></script>
-<script src="{{asset('js/owl.js')}}"></script>
-<script src="{{asset('js/wow.js')}}"></script>
-<script src="{{asset('js/jquery-ui.js')}}"></script>
-<script src="{{asset('js/script.js')}}"></script>
-<script src="{{asset('js/color-settings.js')}}"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/js/jquery.fancybox.js"></script>
+<script src="/js/appear.js"></script>
+<script src="/js/owl.js"></script>
+<script src="/js/wow.js"></script>
+<script src="/js/jquery-ui.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/color-settings.js"></script>
 
 </body>
 
