@@ -1,4 +1,141 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+
+         <!-- Main Header / Header Style Two-->
+    <header class="main-header header-style-two">
+    
+       
+        <!-- Main Box -->
+        <div class="main-box">
+            <div class="auto-container">
+                <div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box">
+                        <div class="logo">
+                             <h3>{{ Auth::user()->name }}</h3>
+                            {{-- <a href="index-2.html"><img src="images/logo-2.png" alt=""></a> --}}
+                        </div>
+                    </div>
+                    
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                    
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-md">
+                            <div class="navbar-header">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class=" "><a href="/dashboard">Dashboard</a>
+                                        
+                                    </li>
+                                    <li class=""><a href="/create">Create Post</a>
+                                       
+                                    </li>
+                                    <li class=""><a href="/user/profile">Profile</a>
+                                        
+                                    </li>
+                                    {{-- <li class=""><a href="/portfolio">Our Works</a>
+                                        
+                                    </li> --}}
+                                    <li> 
+
+                                    <!-- Authentication -->
+                                    <form method="POST" action="/logout" class="mt-4">
+                                        @csrf
+
+                                        <a href="/logout"
+                                                    onclick="event.preventDefault();
+                                                        this.closest('form').submit();" style="color: black; font-weight:bolder;">
+                                            Log Out
+                                    </a>
+                                    </form>
+
+                                    </li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                        <!-- Main Menu End-->
+                       
+                        
+                    </div>
+                    <!--Nav Outer End-->
+                    
+                </div>    
+            </div>
+        </div>
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+            <div class="auto-container clearfix">
+                <!--Logo-->
+                <div class="logo pull-left">
+                    <h1>{{ Auth::user()->name }}</h1>
+                    {{-- <a href="index-2.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a> --}}
+                </div>
+                
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                    <!-- Main Menu -->
+                    <nav class="main-menu  navbar-expand-md">
+                        <div class="navbar-header">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
+                            <ul class="navigation clearfix">
+                                 <li class=" "><a href="/dashboard">Dashboard</a>
+                                        
+                                    </li>
+                                    <li class=""><a href="/create">Create Post</a>
+                                       
+                                    </li>
+                                    <li class=""><a href="/user/profile">Profile</a>
+                                        
+                                    </li>
+                                    {{-- <li class=""><a href="/portfolio">Our Works</a>
+                                        
+                                    </li> --}}
+                                    <li> 
+
+                                    <!-- Authentication -->
+                                    <form method="POST" action="/logout" class="mt-4">
+                                        @csrf
+
+                                        <a href="/logout"
+                                                    onclick="event.preventDefault();
+                                                        this.closest('form').submit();" style="color: black; font-weight:bolder;">
+                                            Log Out
+                                    </a>
+                                    </form>
+
+                                    </li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+    
+    </header>
+    <!--End Main Header -->
+
+
+
+
+{{-- <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -6,7 +143,9 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-jet-application-mark class="block h-9 w-auto" />
+                        <div class="block h-9 w-auto" >
+                         <h1>   {{config('app.name')}}</h1>
+                        </div>
                     </a>
                 </div>
 
@@ -16,6 +155,35 @@
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('create') }}" :active="request()->routeIs('create')">
+                        {{ __('Create') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('profile.show') }}">
+                        {{ __('Profile') }}
+                    </x-jet-nav-link>
+                </div>
+                
+                <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                   <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                    {{ __('Log Out') }}
+                    </x-jet-nav-link>
+                </div>
+                                
+                            </form>
+
+                
+
+
+
+
+
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -80,7 +248,7 @@
                             @else
                                 <span class="inline-flex rounded-md">
                                     <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition">
-                                        {{ Auth::user()->name }}
+                                        
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -214,4 +382,4 @@
             </div>
         </div>
     </div>
-</nav>
+</nav> --}}

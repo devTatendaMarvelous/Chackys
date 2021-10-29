@@ -8,13 +8,13 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                {!! Form::open(['action'=>'App\Http\Controllers\PostsController@store', 'method'=>'POST','enctype'=>'multipart/form-data'])!!}
+                {!! Form::open(['action'=>'App\Http\Controllers\PostsController@update', 'method'=>'POST','enctype'=>'multipart/form-data'])!!}
 
                           <div class="form-group row">
                               {{Form::label('title','Post Title:',['class'=>'col-md-4 col-form-label text-md-right'])}}
                                    
                               <div class="col-md-6 ">
-                                   {{Form::text('title', '', ['class'=>'form-control','placeholder'=>'Product Title','required','autofocus'])}}
+                                   {{Form::text('title', $post->title, ['class'=>'form-control','placeholder'=>'Product Title','required','autofocus'])}}
                               </div>
                          </div>
 
@@ -22,7 +22,7 @@
                               {{Form::label('description','Description:',['class'=>'col-md-4 col-form-label text-md-right'])}}
                                    
                               <div class="col-md-6 ">
-                                   {{Form::textarea('description', '', ['class'=>'form-control','placeholder'=>'Description','required'])}}
+                                   {{Form::textarea('description', $post->descrption, ['class'=>'form-control','placeholder'=>'Description','required'])}}
                               </div>
                          </div>
                          <div class="form-group row">
@@ -41,10 +41,10 @@
                               </div>
                          </div>
 
-
+                         {{Form::hidden('_method','Put')}}
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                {{Form::submit('Post',['class'=>'btn btn-primary'])}}
+                                {{Form::submit('Update',['class'=>'btn btn-primary'])}}
                             </div>
                         </div>
                     {!! Form::close()!!}

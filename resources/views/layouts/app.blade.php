@@ -12,13 +12,46 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <!-- Stylesheets -->
+<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
+<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
+<link href="{{asset('css/style.css')}}" rel="stylesheet">
+<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
+<!--Color Switcher Mockup-->
+<link href="{{asset('css/color-switcher-design.css')}}" rel="stylesheet">
+<!--Color Themes-->
+<link id="theme-color-file" href="{{asset('css/color-themes/default-theme.css')}}" rel="stylesheet">
+
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<link href="{{asset('plugins/revolution/css/settings.css')}}" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
+<link href="{{asset('plugins/revolution/css/layers.css')}}" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+<link href="{{asset('plugins/revolution/css/navigation.css')}}" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
+<link href="{{asset('css/style.css')}}" rel="stylesheet">
+<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
+<!--Color Switcher Mockup-->
+<link href="{{asset('css/color-switcher-design.css')}}" rel="stylesheet">
+<!--Color Themes-->
+<link id="theme-color-file" href="{{asset('css/color-themes/default-theme.css')}}" rel="stylesheet">
+
+
+<link rel="shortcut icon" href="images/fa vicon.png" type="image/x-icon">
+<link rel="icon" href="images/favico n.png" type="image/x-icon">
+
+<!-- Responsive -->
+
+
+
 
         @livewireStyles
 
         <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="{{ mix('js/app.js')}}') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
+
         <x-jet-banner />
 
         <div class="min-h-screen bg-gray-100">
@@ -42,5 +75,46 @@
         @stack('modals')
 
         @livewireScripts
+
+
+        
+<script src="{{asset('js/jquery.js')}}"></script> 
+<!--Revolution Slider-->
+<script src="{{asset('plugins/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+<script src="{{asset('plugins/revolution/js/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
+<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
+<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+<script src="{{asset('plugins/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+<script src="js/main-slider-script.js')}}"></script>
+
+<script src="{{asset('js/popper.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{asset('js/jquery.fancybox.js')}}"></script>
+<script src="{{asset('js/appear.js')}}"></script>
+<script src="{{asset('js/owl.js')}}"></script>
+<script src="{{asset('js/wow.js')}}"></script>
+<script src="{{asset('js/jquery-ui.js')}}"></script>
+<script src="{{asset('js/script.js')}}"></script>
+<script src="{{asset('js/color-settings.js')}}"></script>
+
+<script src="{{asset('js/jquery.js')}}"></script>
+<script src="{{asset('js/popper.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{asset('js/jquery.fancybox.js')}}"></script>
+<script src="{{asset('js/appear.js')}}"></script>
+<script src="{{asset('js/owl.js')}}"></script>
+<script src="{{asset('js/wow.js')}}"></script>
+<script src="{{asset('js/mixitup.js')}}"></script>
+<script src="{{asset('js/jquery-ui.js')}}"></script>
+<script src="{{asset('js/script.js')}}"></script>
+<script src="{{asset('js/color-settings.js')}}"></script>
     </body>
 </html>
