@@ -76,7 +76,7 @@ class PostsController extends Controller
 
         $post=new Post();
         $post->title= $request->input('title');
-        $post->descrption = $request->input('description');
+        $post->description = $request->input('description');
         $post->main = $main;
         $post->pic1 = $pic1;
         $post->save();
